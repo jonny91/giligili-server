@@ -19,8 +19,34 @@ func CreateVideo(c *gin.Context) {
 
 func ShowVideo(c *gin.Context) {
 	s := service.ShowVideoService{}
+	res := s.Show(c.Param("id"))
+	c.JSON(http.StatusOK, res)
+}
+
+func ListVideo(c *gin.Context) {
+	s := service.ListVideoService{}
 	if err := c.ShouldBind(&s); err == nil {
-		res := s.Show(c.Param("id"))
+		res := s.List()
+		c.JSON(http.StatusOK, res)
+	} else {
+		c.JSON(http.StatusOK, ErrorResponse(err))
+	}
+}
+
+func UpdateVideo(c *gin.Context) {
+	s := service.UpdateVideoService{}
+	if err := c.ShouldBind(&s); err == nil {
+		res := s.UpdateVideo(c.Param("id"))
+		c.JSON(http.StatusOK, res)
+	} else {
+		c.JSON(http.StatusOK, ErrorResponse(err))
+	}
+}
+
+func DeleteVideo(c *gin.Context) {
+	s := service.DeleteVideoService{}
+	if err := c.ShouldBind(&s); err == nil {
+		res := s.Delete(c.Param("id"))
 		c.JSON(http.StatusOK, res)
 	} else {
 		c.JSON(http.StatusOK, ErrorResponse(err))
