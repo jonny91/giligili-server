@@ -10,7 +10,7 @@ ENV MYSQL_DSN=""
 ENV REDIS_ADDR=""
 ENV REDIS_PW=""
 ENV REDIS_DB="0"
-ENV GIN_MODE="debug"
+ENV GIN_MODE="release"
 ENV PORT=3000
 
 RUN echo "http://mirrors.aliyun.com/alpine/v3.7/main/" > /etc/apk/repositories && \
