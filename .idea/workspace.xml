@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48105614-f9eb-4594-821b-ccb0e2fbe661" name="Default Changelist" comment="查找视频 插入视频">
-      <change afterPath="$PROJECT_DIR$/service/delete_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/list_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/update_video_service.go" afterDir="false" />
+    <list default="true" id="48105614-f9eb-4594-821b-ccb0e2fbe661" name="Default Changelist" comment="视频API">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/video.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serializer/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializer/video.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +69,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="系统搭建" />
     <MESSAGE value="查找视频 插入视频" />
-    <option name="LAST_COMMIT_MESSAGE" value="查找视频 插入视频" />
+    <MESSAGE value="视频API" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频API" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
